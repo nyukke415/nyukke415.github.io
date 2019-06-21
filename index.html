@@ -1,4 +1,4 @@
-<!-- last updated:<2019/06/21/Fri 22:16:49 from:gale-ThinkPad-T480s> -->
+<!-- last updated:<2019/06/21/Fri 23:41:07 from:gale-ThinkPad-T480s> -->
 
 <!DOCTYPE html>
 <html>
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/sideMenu.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/sideMenu.js"></script>
+    <script src="js/calcAge.js"></script>
   </head>
   <body>
     <div id="wrapper">
@@ -20,6 +21,18 @@
 
 
       <div id="main">
+        <h1>自己紹介</h1>
+        <table class="table" width="100%">
+          <tr><td>名前</td><td>永田 祐介 / Yusuke Nagata</td></tr>
+          <tr><td>誕生日</td><td>1996年4月15日</td></tr>
+          <tr><td>年齢</td><td id="age"></td></tr>
+          <tr><td>生息地</td><td>京都 時々 三重</td></tr>
+          <tr><td>好きな食べ物</td><td>肉</td></tr>
+          <tr><td>嫌いな食べ物</td><td>N/A</td></tr>
+        </table>
+        <!-- 名前: 永田 祐介 / Yusuke Nagata <br>
+             好きな食べ物 肉
+             嫌いな食べ物: N/A -->
         <h1>経歴</h1>
         <table class="table" width="100%">
           <tr><td>2012年4月 〜 2017年3月</td><td>近畿大学工業高等専門学校</td></tr>
@@ -41,8 +54,9 @@
 
         <h1>開発環境</h1>
         <ul>
+          <li>Ubuntu</li>
           <li>emacs</li>
-          <li>zsh</li>
+          <li>zsh + tmux</li>
         </ul>
 
         <h1>リンク</h1>

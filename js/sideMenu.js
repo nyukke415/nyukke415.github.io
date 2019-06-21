@@ -1,4 +1,4 @@
-/* last updated:<2019/06/21/Fri 22:13:37 from:gale-ThinkPad-T480s> */
+/* last updated:<2019/06/21/Fri 23:40:58 from:gale-ThinkPad-T480s> */
 
 function sideMenu() {
   var sideMenu = $("#sideMenu")
@@ -18,7 +18,6 @@ function sideMenu() {
   });
 
   sideMenu.html(internalLink + jump)
-  $('html, body').stop().animate({scrollTop:targetTop}, targetTop = OFFSET );
 }
 
 $(function() {
