@@ -1,0 +1,35 @@
+/* last updated:<2019/06/21/Fri 21:48:42 from:gale-ThinkPad-T480s>  */
+
+#sideMenu {
+  top: 20px;
+  position: sticky;
+  vertical-align: top;
+  display: inline-block;
+  margin: 1%;
+  width: 20%;
+  text-align: left;
+}
+
+.sideh {
+  display: block;
+  text-align: left;
+  color: #ff6600;
+  text-shadow: 0px 0px 10px #ff6600;
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+.sideh:nth-child(n+2) {
+  margin-top: 0.8em;
+}
+
+.sidec {
+  display: block;
+  margin: 0.3em 0;
+  padding: 0.1em 0.3em;
+  color: #d0d0d0 !important;
+}
+
+.sidec:hover {
+  text-decoration: none;
+}
