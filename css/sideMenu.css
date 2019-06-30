@@ -1,4 +1,4 @@
-/* last updated:<2019/06/21/Fri 23:45:10 from:gale-ThinkPad-T480s>  */
+/* last updated:<2019/07/01/Mon 00:10:36 from:gale-ThinkPad-T480s>  */
 
 #sideMenu {
   top: 20px;
@@ -32,4 +32,8 @@
 
 .sidec:hover {
   text-decoration: none;
+}
+
+.active {
+  color: #ff6600 !important;
 }

@@ -1,4 +1,4 @@
-/* last updated:<2019/06/21/Fri 23:40:58 from:gale-ThinkPad-T480s> */
+/* last updated:<2019/07/01/Mon 01:09:05 from:gale-ThinkPad-T480s> */
 
 function sideMenu() {
   var sideMenu = $("#sideMenu")
@@ -8,11 +8,11 @@ function sideMenu() {
 `
   var jump = `
 <div class="sideh">Jump</div>
-<a href="#top" class="button noSel sidec">TOP</a>
+<a href="#top" class="button noSel sidec jump active">TOP</a>
 `
   $('h1').each(function(){
     var text = this.innerHTML
-    jump += `<a href="#`+text+`" class="button noSel sidec">`
+    jump += `<a href="#`+text+`" class="button noSel sidec jump">`
       +text+`</a>`
     $(this).attr("id", text);
   });
@@ -22,4 +22,31 @@ function sideMenu() {
 
 $(function() {
   sideMenu();
+  highlightJumpList();
 });
+
+
+// 現在のスクロール位置に対応した jumpList を強調
+function highlightJumpList() {
+  var list = [0];
+  var sidec = [$('h0')];
+  $('h1').each(function() {
+    list.push($(this).get(0).offsetTop  - 15);
+  });
+  $('.jump').each(function() {
+    sidec.push($(this));
+  });
+
+  $(window).scroll(function() {
+    console.log(list, $(window).scrollTop());
+    $('.jump').each(function() {
+      $(this).removeClass('active');
+    });
+    for(var i = 0; i < list.length; i++) {
+      if(list[i] > $(window).scrollTop()) {
+        sidec[i].addClass('active');
+        break;
+      }
+    }
+  })
+}
