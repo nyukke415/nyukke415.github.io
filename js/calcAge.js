@@ -1,4 +1,4 @@
-/* last updated:<2019/06/21/Fri 23:41:05 from:gale-ThinkPad-T480s> */
+/* last updated:<2019/06/30/Sun 23:33:33 from:gale-ThinkPad-T480s> */
 
 function calcAge() {
   const birthday = new Date(1996, 4-1, 15);
@@ -14,9 +14,5 @@ function calcAge() {
     age_m += 12;
     age -= 1;
   }
-  return age.toString()+"歳"+age_m.toString()+"ヶ月"+age_d.toString()+"日";
+  return age.toString()+" years "+age_m.toString()+" months "+age_d.toString()+" days";
 }
-
-$(function() {
-  $("#age").html(calcAge());
-});
