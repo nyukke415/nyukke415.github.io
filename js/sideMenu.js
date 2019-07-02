@@ -1,9 +1,9 @@
-/* last updated:<2019/07/02/Tue 20:32:56 from:gale-ThinkPad-T480s> */
+/* last updated:<2019/07/02/Tue 21:06:07 from:gale-ThinkPad-T480s> */
 
 function sideMenu() {
   var sideMenu = $("#sideMenu")
-  var internalLink = `
-<div class="sideh">Internal Link</div>
+  var pages = `
+<div class="sideh">Pages</div>
 <a href="index.html" class="button noSel sidec">Home</a>
 `
   var jump = `
@@ -12,19 +12,14 @@ function sideMenu() {
 `
   $('h1').each(function(){
     var text = this.innerHTML
-    jump += `<a href="#`+text+`" class="button noSel sidec jump">`
+    var text_ns = text.replace(" ", "");
+    jump += `<a href="#`+text_ns+`" class="button noSel sidec jump">`
       +text+`</a>`
-    $(this).attr("id", text);
+    $(this).attr("id", text_ns);
   });
 
-  sideMenu.html(internalLink + jump)
+  sideMenu.html(pages + jump)
 }
-
-$(function() {
-  sideMenu();
-  highlightJumpList();
-});
-
 
 // 現在のスクロール位置に対応した jumpList を強調
 function highlightJumpList() {
@@ -49,3 +44,26 @@ function highlightJumpList() {
     }
   })
 }
+
+// スムーズスクロール（履歴に残らない）
+function setSmoothScroll() {
+  $('a[href^="#"]').on('click', function() {
+    var speed = 200; // ms
+    var href= $(this).attr("href");
+    if(href == "#top") {
+      var position = 0;
+    } else {
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.get(0).offsetTop - 15;
+    }
+    $("html, body").animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+}
+
+
+$(function() {
+  sideMenu();
+  highlightJumpList();
+  setSmoothScroll();
+});
