@@ -1,4 +1,4 @@
-/* last updated:<2019/07/01/Mon 01:29:27 from:gale-ThinkPad-T480s> */
+/* last updated:<2019/07/02/Tue 20:32:48 from:gale-ThinkPad-T480s> */
 
 function calcAge() {
   const birthdate = new Date(1996, 4-1, 15);
@@ -6,7 +6,6 @@ function calcAge() {
   var age = today.getFullYear() - birthdate.getFullYear();
   var age_m = today.getMonth() - birthdate.getMonth();
   var age_d = today.getDate() - birthdate.getDate();
-  console.log(age, age_m, age_d);
   if(age_d < 0) {
     age_d += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
     age_m -= 1;

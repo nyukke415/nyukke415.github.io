@@ -1,4 +1,4 @@
-/* last updated:<2019/07/01/Mon 01:09:05 from:gale-ThinkPad-T480s> */
+/* last updated:<2019/07/02/Tue 20:32:56 from:gale-ThinkPad-T480s> */
 
 function sideMenu() {
   var sideMenu = $("#sideMenu")
@@ -38,7 +38,6 @@ function highlightJumpList() {
   });
 
   $(window).scroll(function() {
-    console.log(list, $(window).scrollTop());
     $('.jump').each(function() {
       $(this).removeClass('active');
     });
