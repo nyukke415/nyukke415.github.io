@@ -1,4 +1,4 @@
-/* last updated:<2019/07/02/Tue 20:32:48 from:gale-ThinkPad-T480s> */
+/* last updated:<2019/07/02/Tue 21:09:02 from:gale-ThinkPad-T480s> */
 
 function calcAge() {
   const birthdate = new Date(1996, 4-1, 15);
@@ -14,5 +14,11 @@ function calcAge() {
     age_m += 12;
     age -= 1;
   }
-  return age.toString()+" years "+age_m.toString()+" months "+age_d.toString()+" days";
+  $("#age").html(age.toString());
+  $("#age_m").html(age_m.toString());
+  $("#age_d").html(age_d.toString());
 }
+
+$(function() {
+  calcAge();
+});
