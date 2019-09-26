@@ -1,4 +1,4 @@
-/* last updated:<2019/07/02/Tue 21:59:29 from:gale-ThinkPad-T480s>  */
+/* last updated:<2019/09/26/Thu 13:05:53 from:gale-ThinkPad-T480s>  */
 html, body, div {
   margin: 0px;
   padding: 0px;
@@ -13,6 +13,7 @@ html, body, div {
   max-width: 1200px;
   text-align: left;
   padding: 0 0 2% 0;
+  max-width: 1000px;
 }
 
 #main {
