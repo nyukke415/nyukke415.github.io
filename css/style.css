@@ -1,4 +1,4 @@
-/* last updated:<2019/09/26/Thu 13:05:53 from:gale-ThinkPad-T480s>  */
+/* last updated:<2019/10/04/Fri 18:26:40 from:gale-ThinkPad-T480s>  */
 html, body, div {
   margin: 0px;
   padding: 0px;
@@ -24,6 +24,28 @@ html, body, div {
   padding: 0 3% 3% 3%;
   width: 70%;
   background-color: #000000;
+  border-radius: 0.3em;
+}
+
+#main * {
+  background-color: #000000;
+}
+
+#ubs_wrapper {
+  display: inline-block;
+  text-align: right;
+}
+
+#about_me {
+  vertical-align: top;
+  width: 65%;
+  display: inline-block;
+  text-align: left;
+}
+
+#ubs {
+  vertical-align: top;
+  width: 33%;
   border-radius: 0.3em;
 }
 
