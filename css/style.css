@@ -1,4 +1,4 @@
-/* last updated:<2019/10/04/Fri 18:26:40 from:gale-ThinkPad-T480s>  */
+/* last updated:<2019/10/04/Fri 20:01:43 from:gale-ThinkPad-T480s>  */
 html, body, div {
   margin: 0px;
   padding: 0px;
@@ -13,7 +13,7 @@ html, body, div {
   max-width: 1200px;
   text-align: left;
   padding: 0 0 2% 0;
-  max-width: 1000px;
+  max-width: 1080px;
 }
 
 #main {
@@ -25,6 +25,8 @@ html, body, div {
   width: 70%;
   background-color: #000000;
   border-radius: 0.3em;
+  font-size: 13pt;
+  line-height: 120%;
 }
 
 #main * {
@@ -95,7 +97,7 @@ h0 {
 h1 {
   color: #ff6600;
   text-shadow: 0px 0px 10px #ff6600;
-  font-size: 17pt;
+  font-size: 18pt;
 }
 h1:nth-child(n+2) {
   margin-top: 50px;
@@ -113,6 +115,7 @@ h1:nth-child(n+2) {
 .table {
   border-collapse: collapse;
   margin: 2% 0 4.5% 0;
+  font-size: 12pt;
 }
 .table th, .table tr, .table td {
   border: solid 1px #ff6600;
