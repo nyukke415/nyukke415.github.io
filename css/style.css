@@ -1,4 +1,4 @@
-/* last updated:<2019/10/04/Fri 20:01:43 from:gale-ThinkPad-T480s>  */
+/* last updated:<2019/10/07/Mon 16:22:52 from:gale-ThinkPad-T480s>  */
 html, body, div {
   margin: 0px;
   padding: 0px;
@@ -47,8 +47,9 @@ html, body, div {
 
 #ubs {
   vertical-align: top;
-  width: 33%;
   border-radius: 0.3em;
+  width: 33%;
+  filter: saturate(55%);
 }
 
 #sideMenu {
