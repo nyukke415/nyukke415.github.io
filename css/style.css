@@ -1,4 +1,4 @@
-/* last updated:<2019/10/07/Mon 16:22:52 from:gale-ThinkPad-T480s>  */
+/* last updated:<2019/10/07/Mon 16:37:31 from:gale-ThinkPad-T480s>  */
 html, body, div {
   margin: 0px;
   padding: 0px;
@@ -33,7 +33,7 @@ html, body, div {
   background-color: #000000;
 }
 
-#ubs_wrapper {
+#profile_wrapper {
   display: inline-block;
   text-align: right;
 }
@@ -45,7 +45,7 @@ html, body, div {
   text-align: left;
 }
 
-#ubs {
+#profile {
   vertical-align: top;
   border-radius: 0.3em;
   width: 33%;
