@@ -1,4 +1,4 @@
-/* last updated:<2019/10/07/Mon 17:19:32 from:gale-ThinkPad-T480s>  */
+/* last updated:<2020/03/02/Mon 18:24:56 from:gale-ThinkPad-T480s>  */
 html, body, div {
   margin: 0px;
   padding: 0px;
@@ -147,4 +147,10 @@ a:visited {
 /* list */
 li {
   margin: 0.2em;
+}
+
+
+/* ################ my class ################ */
+.authors {
+  font-size: 11.5pt;
 }
