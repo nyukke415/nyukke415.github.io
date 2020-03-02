@@ -1,12 +1,13 @@
-/* last updated:<2019/09/26/Thu 12:13:43 from:gale-ThinkPad-T480s> */
+/* last updated:<2020/03/02/Mon 18:37:09 from:gale-ThinkPad-T480s> */
 
 function sideMenu() {
   var sideMenu = $("#sideMenu")
   var pages = `
 <div class="sideh">Pages</div>
 <a href="index.html" class="button noSel sidec">Home</a>
-<a href="note.html" class="button noSel sidec">Note</a>
 `
+  // <a href="note.html" class="button noSel sidec">Note</a>
+
   var jump = `
 <div class="sideh">Jump</div>
 <a href="#top" class="button noSel sidec jump active">TOP</a>
