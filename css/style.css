@@ -1,4 +1,4 @@
-/* last updated:<2020/03/02/Mon 18:24:56 from:gale-ThinkPad-T480s>  */
+/* last updated:<2020/06/29/Mon 20:00:03 from:tuttle-desktop>  */
 html, body, div {
   margin: 0px;
   padding: 0px;
@@ -101,6 +101,13 @@ h1 {
 }
 h1:nth-child(n+2) {
   margin-top: 50px;
+}
+
+h2 {
+  color: #ff6600;
+  /* text-shadow: 0px 0px 10px #ff6600; */
+  font-weight: normal;
+  font-size: 15pt;
 }
 
 .noSel {
