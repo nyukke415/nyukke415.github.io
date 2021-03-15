@@ -1,78 +1,36 @@
-/* last updated:<2020/06/29/Mon 20:00:03 from:tuttle-desktop>  */
+/* last updated:<2021/03/15/Mon 12:57:19 from:tuttle-desktop>  */
 html, body, div {
   margin: 0px;
   padding: 0px;
   text-align: center;
-  color: #d0d0d0;
-  background-color: #222222;
-}
-
-#wrapper {
-  display: inline-block;
-  width: 85%;
-  max-width: 1200px;
-  text-align: left;
-  padding: 0 0 2% 0;
-  max-width: 1080px;
+  background-color: #E0E0E5;
 }
 
 #main {
-  vertical-align: top;
   display: inline-block;
   margin: 0;
   text-align: left;
   padding: 0 3% 3% 3%;
-  width: 70%;
-  background-color: #000000;
-  border-radius: 0.3em;
+  width: 90%;
+  /* min-width: 600px; */
+  max-width: 1200px;
   font-size: 13pt;
   line-height: 120%;
 }
 
-#main * {
-  background-color: #000000;
-}
-
 #profile_wrapper {
   display: inline-block;
-  text-align: right;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18pt;
 }
-
-#about_me {
+#ubs {
   vertical-align: top;
-  width: 65%;
-  display: inline-block;
-  text-align: left;
-}
-
-#profile {
-  vertical-align: top;
-  border-radius: 0.3em;
-  width: 33%;
-}
-
-#sideMenu {
-  top: 20px;
-  position: sticky;
-  vertical-align: top;
-  display: inline-block;
-  margin: 0;
-  width: 27%;
-  margin: 0 0 0 2%;
-  padding: 0 0 10px 0;
-  text-align: left;
-}
-
-@media screen and (max-width: 800px) {
-  #wrapper {width: 95%;}
-  #wrapper:nth-child(1) {
-    text-align: center;
-  }
-  #main {width: 100%;}
-  #sideMenu {
-    margin: 2% 0 0 0;
-    width: 80%;
-  }
+  border-radius: 1.3em;
+  width: 20%;
+  min-width: 200px;
+  margin-bottom: 10px;
 }
 
 *, *:before, *:after  {
@@ -86,17 +44,12 @@ html, body, div {
 /* others */
 h0 {
   display: block;
-  margin: 17px;
   font-size: 26pt;
   font-weight: bold;
-  color: #ff6600;
-  text-shadow: 0px 0px 5px #ff6600;
   text-align: center;
 }
 
 h1 {
-  color: #ff6600;
-  text-shadow: 0px 0px 10px #ff6600;
   font-size: 18pt;
 }
 h1:nth-child(n+2) {
@@ -104,8 +57,6 @@ h1:nth-child(n+2) {
 }
 
 h2 {
-  color: #ff6600;
-  /* text-shadow: 0px 0px 10px #ff6600; */
   font-weight: normal;
   font-size: 15pt;
 }
@@ -125,19 +76,12 @@ h2 {
   font-size: 12pt;
 }
 .table th, .table tr, .table td {
-  border: solid 1px #ff6600;
-  box-shadow: 0 0 10px rgba(255, 102, 0, 0.2);
+  border: solid 1px #000000;
   padding: 8px 20px;
-}
-
-th {
-  color: #ff6600;
-  text-shadow: 0px 0px 10px #ff6600;;
 }
 
 /* link */
 a {
-  color: #00ffff;
   text-shadow: none;
   text-decoration: none;
   outline: none;
@@ -147,15 +91,11 @@ a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-a:visited {
-  color: #7777ff;
-}
 
 /* list */
 li {
   margin: 0.2em;
 }
-
 
 /* ################ my class ################ */
 .authors {
